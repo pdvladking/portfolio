@@ -12,7 +12,7 @@ export default function Navbar() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white dark:bg-black shadow-md">
+    <nav className="fixed top-0 w-full z-50 bg-black text-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Left: Branding */}
@@ -28,12 +28,13 @@ export default function Navbar() {
 </div>
 
         {/* Center: Nav links */}
-        <div className="hidden md:flex space-x-8 text-gray-600 dark:text-gray-300 text-sm font-medium">
-          <a href="#home" className="hover:text-red-600">Home</a>
-          <a href="#projects" className="hover:text-red-600">Projects</a>
-          <a href="#about" className="hover:text-red-600">About</a>
-          <a href="#contact" className="hover:text-red-600">Contact</a>
-        </div>
+       <div className="hidden md:flex space-x-8 text-white text-sm font-medium">
+  <a href="#home" className="hover:text-red-600">Home</a>
+  <a href="#projects" className="hover:text-red-600">Projects</a>
+  <a href="#about" className="hover:text-red-600">About</a>
+  <a href="#contact" className="hover:text-red-600">Contact</a>
+  <a href="#resume" className="hover:text-red-600">Resume</a>
+</div>
 
         {/* Right: Icon stack */}
         <div className="flex items-center space-x-4">
@@ -41,7 +42,7 @@ export default function Navbar() {
           {mounted && (
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="text-xl text-gray-600 dark:text-gray-300 hover:text-red-500 transition duration-300"
+              className="text-xl text-white hover:text-red-500 transition duration-300"
               aria-label="Toggle Theme"
             >
               {theme === "light" ? <HiMoon /> : <HiSun />}
@@ -53,7 +54,7 @@ export default function Navbar() {
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xl text-gray-600 dark:text-gray-300 hover:text-red-500 transition duration-300"
+            className="text-xl text-white hover:text-red-500 transition duration-300"
             aria-label="GitHub"
           >
             <FaGithub />
