@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.4, ease: "easeOut" }} // ⬅️ reduced from 0.6
         >
           <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
-            From ashes to algorithms—I'm <span className="text-red-500">Raja</span>
+            From ashes to algorithms—I&apos;m <span className="text-red-500">Raja</span>
           </h1>
           <p className="text-md md:text-lg text-neutral-300 max-w-md leading-relaxed mx-auto md:mx-0">
             I forge interfaces with precision and intensity—clean layouts, immersive flows, and visual stories built to resonate. Each line of code carries heat, and every pixel reflects a purpose.
