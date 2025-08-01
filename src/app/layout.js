@@ -29,6 +29,11 @@ export const metadata = {
   authors: [{ name: "Raja" }],
   creator: "Raja",
   themeColor: "#111827",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon-32x32.png",
+  },
   openGraph: {
     title: "Raja | UI/UX Designer & Full-Stack Developer",
     description:
