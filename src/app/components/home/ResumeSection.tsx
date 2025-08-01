@@ -6,27 +6,34 @@ import { motion } from "framer-motion";
 export default function ResumeSection() {
   const resume = [
     {
-      role: "Aspiring UI/UX Designer & Full-Stack Developer",
+      role: "UI/UX Designer & Full-Stack Developer",
       company: "Mindrisers Institute of Technology",
       period: "Jan 2025 – Present",
       highlights: [
-        "Completed MERN Stack Training (Certificate No: MR-81075-MS)",
-        "Learning to master React, Tailwind, Node.js, and MongoDB",
-        "Designing interfaces with precision, clarity, and unified visual rhythm",
-        "Developing dummy projects to refine layout logic, component structure, and scroll experience",
-        "Building speed, accuracy, and organizational skill through iterative practice",
+        "Mastered React, Tailwind, Node.js, and MongoDB through hands-on projects",
+        "Built and deployed a full-stack hospital management system with protected admin panel",
+        "Refined layout logic, scroll rhythm, and component structure through iterative design",
+        "Developed speed, precision, and system-level troubleshooting skills",
       ],
+      certificate: {
+        text: "Completed MERN Stack Training (Certificate No: MR-81075-MS)",
+        link: "https://www.mindrisers.com.np/certificate/validate/MR-81075-MS",
+      },
     },
     {
-      role: "Future-Facing Developer",
+      role: "Creative Technologist & Portfolio Architect",
       company: "Personal Projects & Exploration",
       period: "2025 →",
       highlights: [
-        "Rapid prototyping of UI concepts and component systems",
-        "Applying design thinking to layout experiments and form logic",
-        "Using AI as a technical collaborator to accelerate growth",
-        "Committed to clarity, momentum, and building tools that feel intentional",
+        "Designed and deployed a modular Next.js portfolio with unified layout and live integration",
+        "Exploring personal branding, model scouting, and social anticipation as creative extensions",
+        "Using AI as a technical collaborator to accelerate growth and refine design logic",
+        "Committed to clarity, momentum, and building tools that feel intentional and lasting",
       ],
+      certificate: {
+        text: "Completed FCC Responsive Web Design Certification (Certificate No: FCC-RWD-0725)",
+        link: "https://www.freecodecamp.org/certification/RajaThapa/responsive-web-design",
+      },
     },
   ];
 
@@ -43,7 +50,7 @@ export default function ResumeSection() {
               key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: i * 0.1 }} // ⬅️ reduced duration & stagger
+              transition={{ duration: 0.3, delay: i * 0.1 }}
               className="bg-white p-6 rounded-xl border border-neutral-300 shadow-sm hover:shadow-md transition"
             >
               <div className="flex justify-between items-center mb-2">
@@ -52,8 +59,19 @@ export default function ResumeSection() {
               </div>
               <p className="text-neutral-600 mb-3 font-medium">{item.company}</p>
               <ul className="list-disc list-inside text-neutral-700 space-y-1 text-sm leading-relaxed">
+                <li>
+                  {item.certificate.text} –{" "}
+                  <a
+                    href={item.certificate.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    View Certificate →
+                  </a>
+                </li>
                 {item.highlights.map((point, j) => (
-                  <li key={j}>{point}</li>
+                  <li key={j + "highlight"}>{point}</li>
                 ))}
               </ul>
             </motion.div>

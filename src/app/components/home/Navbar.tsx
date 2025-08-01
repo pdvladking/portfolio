@@ -16,25 +16,25 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Left: Branding */}
-    <div className="relative text-2xl font-playfair font-bold tracking-wide animate-phoenix-shake-ash transition-transform duration-300 ease-in-out">
-  <span className="bg-gradient-to-r from-red-700 via-red-600 to-red-500 bg-clip-text text-transparent drop-shadow-md animate-phoenix-shake-ash font-bold text-2xl tracking-wide">
-  RAJA
-</span>
+        <div className="relative text-2xl font-playfair font-bold tracking-wide animate-phoenix-shake-ash transition-transform duration-300 ease-in-out">
+          <span className="bg-gradient-to-r from-red-700 via-red-600 to-red-500 bg-clip-text text-transparent drop-shadow-md animate-phoenix-shake-ash font-bold text-2xl tracking-wide">
+            RAJA
+          </span>
 
-  {/* Spark Embers */}
-  <span className="spark top-0 left-0" />
-  <span className="spark top-0 right-0" />
-  <span className="spark bottom-0 left-2" />
-</div>
+          {/* Spark Embers */}
+          <span className="spark top-0 left-0" />
+          <span className="spark top-0 right-0" />
+          <span className="spark bottom-0 left-2" />
+        </div>
 
         {/* Center: Nav links */}
-       <div className="hidden md:flex space-x-8 text-white text-sm font-medium">
-  <a href="#home" className="hover:text-red-600">Home</a>
-  <a href="#projects" className="hover:text-red-600">Projects</a>
-  <a href="#about" className="hover:text-red-600">About</a>
-  <a href="#contact" className="hover:text-red-600">Contact</a>
-  <a href="#resume" className="hover:text-red-600">Resume</a>
-</div>
+        <div className="hidden md:flex space-x-8 text-white text-sm font-medium">
+          <a href="#home" className="hover:text-red-600">Home</a>
+          <a href="#projects" className="hover:text-red-600">Projects</a>
+          <a href="#about" className="hover:text-red-600">About</a>
+          <a href="#contact" className="hover:text-red-600">Contact</a>
+          <a href="#resume" className="hover:text-red-600">Resume</a>
+        </div>
 
         {/* Right: Icon stack */}
         <div className="flex items-center space-x-4">
@@ -51,7 +51,7 @@ export default function Navbar() {
 
           {/* GitHub Icon */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/pdvladking"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xl text-white hover:text-red-500 transition duration-300"

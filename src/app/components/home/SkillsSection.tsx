@@ -8,17 +8,32 @@ export default function SkillsSection() {
     {
       title: "⚡ Rapid Prototyping",
       description:
-        "I translate visual concepts into modular React components with Tailwind—fast, clean, and scalable.",
+        "I build modular React components with Tailwind—responsive, scalable, and visually tight. Deployment-ready in hours.",
     },
     {
       title: "🧩 Layout Precision",
       description:
-        "Diagnosing spacing, proximity, and alignment issues is second nature. I make grids feel intentional.",
+        "Diagnosing spacing, proximity, and hierarchy issues in complex grids is second nature. I make interfaces feel intentional.",
     },
     {
       title: "🎨 Design Harmony",
       description:
-        "I build with flow—every section, every pixel, every interaction feels unified and alive.",
+        "Scroll rhythm, color transitions, and visual flow—every section feels unified, alive, and emotionally resonant.",
+    },
+    {
+      title: "🛠️ Full-Stack Fluency",
+      description:
+        "Express + MongoDB APIs, protected routes, and live deployment to Vercel/Render. I troubleshoot across the stack.",
+    },
+    {
+      title: "🧠 UI/UX Thinking",
+      description:
+        "I translate abstract ideas into clean, intuitive interfaces. Iterative design is my default—refine until it *feels* right.",
+    },
+    {
+      title: "🌐 Creative Expansion",
+      description:
+        "Exploring personal branding, model scouting, and social anticipation. I blend tech, design, and presence into new ventures.",
     },
   ];
 
@@ -35,7 +50,7 @@ export default function SkillsSection() {
               key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: i * 0.1 }} // ⬅️ reduced duration & stagger
+              transition={{ duration: 0.3, delay: i * 0.1 }}
               className="bg-neutral-100 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300"
             >
               <h3 className="text-xl font-semibold mb-3 text-accent">{skill.title}</h3>
