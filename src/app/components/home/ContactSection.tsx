@@ -14,7 +14,7 @@ export default function ContactSection() {
           className="text-3xl md:text-4xl font-bold tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }} // ⬅️ reduced from 0.6
+          transition={{ duration: 0.4 }}
         >
           Let’s Connect
         </motion.h2>
@@ -23,17 +23,19 @@ export default function ContactSection() {
           className="text-neutral-600"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.15 }} // ⬅️ reduced duration & delay
+          transition={{ duration: 0.3, delay: 0.15 }}
         >
           Whether you’ve got a project, a question, or just want to say hi — I’d love to hear from you.
         </motion.p>
 
         {/* Contact Form */}
         <motion.form
+          action="https://formspree.io/f/xanbpakz"
+          method="POST"
           className="space-y-6 text-left"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.3 }} // ⬅️ reduced duration & delay
+          transition={{ duration: 0.3, delay: 0.3 }}
         >
           <div>
             <label htmlFor="name" className="block mb-1 text-sm font-medium text-neutral-700">
@@ -41,7 +43,9 @@ export default function ContactSection() {
             </label>
             <input
               type="text"
+              name="name"
               id="name"
+              required
               className="w-full px-4 py-2 bg-neutral-100 border border-neutral-300 rounded focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Your name"
             />
@@ -52,7 +56,9 @@ export default function ContactSection() {
             </label>
             <input
               type="email"
+              name="email"
               id="email"
+              required
               className="w-full px-4 py-2 bg-neutral-100 border border-neutral-300 rounded focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="you@example.com"
             />
@@ -62,7 +68,9 @@ export default function ContactSection() {
               Message
             </label>
             <textarea
+              name="message"
               id="message"
+              required
               rows={5}
               className="w-full px-4 py-2 bg-neutral-100 border border-neutral-300 rounded focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="What's on your mind?"
@@ -70,7 +78,7 @@ export default function ContactSection() {
           </div>
           <button
             type="submit"
-            className="px-6 py-3 bg-accent text-white rounded hover:bg-accent-dark transition font-medium"
+            className="px-4 py-2 text-xs rounded-full bg-black text-white font-semibold border border-[#ff3c3c] shadow-md hover:scale-105 transition-transform duration-300 animate-shine"
           >
             Send Message
           </button>
@@ -81,28 +89,38 @@ export default function ContactSection() {
           className="pt-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: 0.45 }} // ⬅️ reduced duration & delay
+          transition={{ duration: 0.3, delay: 0.45 }}
         >
-          <div className="flex justify-center gap-6 text-sm text-neutral-600">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-neutral-600">
             <a
-              href="mailto:you@example.com"
+              href="mailto:pdvladking@gmail.com"
               className="hover:text-accent transition underline underline-offset-4"
             >
               Email
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/pdvladking"
               target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-accent transition underline underline-offset-4"
             >
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.instagram.com/rajthapa_404/"
               target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-accent transition underline underline-offset-4"
             >
-              LinkedIn
+              Instagram
+            </a>
+            <a
+              href="https://www.tiktok.com/@rajthapa_404"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition underline underline-offset-4"
+            >
+              TikTok
             </a>
           </div>
         </motion.div>

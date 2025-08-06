@@ -1,57 +1,49 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 
-export default function ProjectSection() {
+export default function ProjectShowcase() {
   const projects = [
     {
-      title: "Hospital UI Revamp",
+      title: "Leather Shop (E-Commerce)",
       description:
-        "Advanced service grids, icon-based menus, and unified visual flow for a hospital web platform.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      link: "https://your-hospital-project.com",
+        "Full-stack product showcase with dynamic cart logic, responsive grid, and clean deployment. Built fast, shipped sharp.",
+      tech: ["MongoDB", "Express", "React", "Node.js"],
+      link: "https://rj-mernstorm.vercel.app/",
+    },
+    {
+      title: "Hospital Site",
+      description:
+        "Robust MERN platform with modular UI, dynamic appointments, patient records, and admin/doctor views. Real-world logic, real-time execution.",
+      tech: ["MongoDB", "Express", "React", "Node.js"],
+      link: "https://mern-hospital-site.vercel.app/",
     },
     {
       title: "Portfolio Site",
       description:
-        "Narrative-driven personal site showcasing skills, projects, and design philosophy.",
-      tech: ["Next.js", "Tailwind", "Vercel"],
-      link: "https://your-portfolio.com",
-    },
-    {
-      title: "DNS Debug Toolkit",
-      description:
-        "System-level troubleshooting tools for DNS overrides, router config, and firmware analysis.",
-      tech: ["Node.js", "Shell", "Netlify"],
-      link: "https://your-dns-toolkit.com",
+        "Narrative-driven Next.js portfolio with locked dark theme, scroll rhythm, and accent borders. Identity meets execution.",
+      tech: ["Next.js", "Framer Motion", "Vercel"],
+      link: "https://ink-that-speaks.vercel.app/",
     },
   ];
 
   return (
-    <section
-      id="projects"
-      className="py-20 px-6 md:px-12 lg:px-24 bg-white text-neutral-900"
-    >
-      <div className="max-w-5xl mx-auto space-y-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+    <section id="projects" className="scroll-mt-24 py-16 px-6 md:px-12 lg:px-24 bg-white text-neutral-900">
+      <div className="max-w-5xl mx-auto space-y-10">
+        <h2 className="text-3xl font-bold tracking-tight text-center">
+          Project Showcase
+        </h2>
+        <div className="space-y-6">
           {projects.map((project, i) => (
-            <motion.a
+            <a
               key={i}
               href={project.link}
               target="_blank"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: i * 0.1 }} // ⬅️ reduced duration & stagger
-              className="group bg-neutral-100 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 border border-neutral-200 hover:border-accent"
+              rel="noopener noreferrer"
+              className="block border border-neutral-200 rounded-lg p-6 hover:border-accent hover:shadow transition"
             >
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-accent transition">
-                {project.title}
-              </h3>
-              <p className="text-neutral-700 mb-4 leading-relaxed">
-                {project.description}
-              </p>
+              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <p className="text-neutral-700 mb-3">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, j) => (
                   <span
@@ -62,7 +54,7 @@ export default function ProjectSection() {
                   </span>
                 ))}
               </div>
-            </motion.a>
+            </a>
           ))}
         </div>
       </div>

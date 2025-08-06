@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
 import React from "react";
+import { FaGithub, FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,10 +12,19 @@ export default function Footer() {
         <p>&copy; {new Date().getFullYear()} Raj. All rights reserved.</p>
 
         {/* Socials */}
-        <div className="flex gap-6">
-          <a href="mailto:you@example.com" className="hover:text-accent transition">Email</a>
-          <a href="https://github.com/yourusername" target="_blank" className="hover:text-accent transition">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" className="hover:text-accent transition">LinkedIn</a>
+        <div className="flex gap-6 text-xl">
+          <a href="mailto:pdvladking@gmail.com" className="hover:text-accent transition" aria-label="Email">
+            <FaEnvelope />
+          </a>
+          <a href="https://github.com/pdvladking" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition" aria-label="GitHub">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/rajthapa_404/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a href="https://www.tiktok.com/@rajthapa_404" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition" aria-label="TikTok">
+            <FaTiktok />
+          </a>
         </div>
 
         {/* Back to top */}

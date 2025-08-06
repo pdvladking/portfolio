@@ -15,7 +15,7 @@ export default function Hero() {
           className="md:w-1/2 space-y-6 text-center md:text-left"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }} // ⬅️ reduced from 0.6
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
             From ashes to algorithms—I&apos;m <span className="text-red-500">Raja</span>
@@ -29,19 +29,20 @@ export default function Hero() {
             className="flex justify-center md:justify-start gap-4 pt-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.2 }} // ⬅️ reduced duration and delay
+            transition={{ duration: 0.3, delay: 0.2 }}
           >
             <a
               href="#projects"
               className="px-6 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition duration-300"
             >
-              View Projects
+              🚀 View Projects
             </a>
             <a
-              href="#contact"
+              href="/raja-thapa-resume.pdf"
+              download
               className="px-6 py-2 border border-red-500 hover:bg-red-500 hover:text-white text-red-500 rounded-lg font-medium transition duration-300"
             >
-              Contact Me
+              📄 Download Resume
             </a>
           </motion.div>
         </motion.div>
@@ -51,7 +52,7 @@ export default function Hero() {
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.15 }} // ⬅️ reduced duration and delay
+          transition={{ duration: 0.4, delay: 0.15 }}
         >
           <Image
             src="/r2.webp"
@@ -67,7 +68,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.8 }} // ⬅️ reduced duration and delay
+        transition={{ duration: 0.3, delay: 0.8 }}
         className="mt-12 flex justify-center"
       >
         <a
