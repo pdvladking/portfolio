@@ -23,7 +23,7 @@ export default function ResumeSection() {
     {
       role: "Creative Technologist & Portfolio Architect",
       company: "Personal Projects & Exploration",
-      period: "2025 →",
+      period: "Jul 2025 →",
       highlights: [
         "Designed and deployed a modular Next.js portfolio with unified layout, dark theme, and live project integration",
         "Curated digital identity through intentional branding, social anticipation, and narrative-driven design",
@@ -33,6 +33,21 @@ export default function ResumeSection() {
       certificate: {
         text: "Completed FCC Responsive Web Design Certification (Certificate No: FCC-RWD-0725)",
         link: "https://www.freecodecamp.org/certification/rajathapa/responsive-web-design",
+      },
+    },
+    {
+      role: "Certified in Data Structures & Algorithms",
+      company: "freeCodeCamp",
+      period: "Aug 2025",
+      highlights: [
+        "Completed 300+ hours of rigorous algorithmic challenges and problem-solving",
+        "Mastered recursion, dynamic programming, graph theory, and time complexity analysis",
+        "Used AI-assisted workflows to accelerate learning and deepen conceptual clarity",
+        "Built a foundation for scalable, performant full-stack systems",
+      ],
+      certificate: {
+        text: "FCC Data Structures & Algorithms Certification (Certificate No: FCC-DSA-0825)",
+        link: "https://www.freecodecamp.org/certification/rajathapa/javascript-algorithms-and-data-structures-v8",
       },
     },
   ];
