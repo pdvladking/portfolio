@@ -7,11 +7,11 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 px-6 md:px-12 lg:px-24 bg-white text-neutral-900"
+      className="py-20 px-6 md:px-12 lg:px-24 bg-neutral-200 text-neutral-900"
     >
       <div className="max-w-3xl mx-auto space-y-8 text-center">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold tracking-tight"
+          className="text-3xl md:text-4xl font-bold tracking-tight inline-block border-b-2 border-red-500 bg-neutral-100 px-4 py-2 rounded"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}

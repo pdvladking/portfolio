@@ -1,7 +1,8 @@
 "use client";
-
-import { AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function ClientWrapper({ children }) {
-  return <AnimatePresence mode="wait">{children}</AnimatePresence>;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted ? <>{children}</> : null;
 }

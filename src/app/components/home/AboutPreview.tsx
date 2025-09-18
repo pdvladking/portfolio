@@ -9,21 +9,30 @@ export default function AboutPreview() {
       className="py-16 px-6 text-center bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white"
     >
       <motion.h2
-        className="text-3xl md:text-4xl font-semibold mb-4"
+        className="text-3xl md:text-4xl font-bold tracking-tight inline-block border-b-2 border-red-500 px-4 py-2 rounded"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }} // ⬅️ reduced from 0.6
+        transition={{ duration: 0.4 }}
       >
-        The Mind Behind the Motion
+        The{" "}
+        <span
+          className="text-red-500"
+          style={{ fontFamily: "var(--font-satisfy)" }}
+        >
+          Mind
+        </span>{" "}
+        Behind the <span className="text-red-500">Motion</span>
       </motion.h2>
 
       <motion.p
-        className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+        className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed mt-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.15 }} // ⬅️ reduced duration & delay
+        transition={{ duration: 0.3, delay: 0.15 }}
       >
-        I wasn’t born into tech—I built my way here. From late-night debugging to bringing ideas back from the brink, I write code with grit and clarity. The fire isn’t just in the gradients—it’s in the journey.
+        I build responsive websites, design clean interfaces, and develop
+            full-stack applications using modern tools like React, Node.js, and
+            MongoDB.
       </motion.p>
     </section>
   );

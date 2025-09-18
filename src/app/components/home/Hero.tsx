@@ -2,8 +2,15 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section
       id="home"
@@ -17,11 +24,18 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
-            From ashes to algorithms—I&apos;m <span className="text-red-500">Raja</span>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+            UI/UX{" "}
+            <span
+              className="text-red-500"
+              style={mounted ? { fontFamily: "var(--font-satisfy)" } : undefined}
+            >
+              Designer
+            </span>{" "}
+            & Full-Stack <span className="text-red-500">Developer</span>
           </h1>
           <p className="text-md md:text-lg text-neutral-300 max-w-md leading-relaxed mx-auto md:mx-0">
-            I forge interfaces with precision and intensity—clean layouts, immersive flows, and visual stories built to resonate. Each line of code carries heat, and every pixel reflects a purpose.
+            I design with intent and build with precision. Every interface, every line of code—engineered to be fast, clear, and impactful.
           </p>
 
           {/* CTA Buttons */}
@@ -59,7 +73,8 @@ export default function Hero() {
             alt="Raja"
             width={384}
             height={384}
-            className="rounded-xl shadow-lg object-cover"
+            priority
+            className="rounded-xl border-2 border-red-500 shadow-lg object-cover animate-pulse"
           />
         </motion.div>
       </div>

@@ -1,6 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Satisfy } from "next/font/google";
 import "./globals.css";
-import ClientWrapper from "./ClientWrapper"; // new file you'll create
+import ClientWrapper from "./ClientWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const satisfy = Satisfy({
+  variable: "--font-satisfy",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata = {
@@ -28,12 +34,6 @@ export const metadata = {
   ],
   authors: [{ name: "Raja" }],
   creator: "Raja",
-  themeColor: "#111827",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon-32x32.png",
-  },
   openGraph: {
     title: "Raja | UI/UX Designer & Full-Stack Developer",
     description:
@@ -60,11 +60,15 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#111827",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${satisfy.variable} antialiased`}
       >
         <ClientWrapper>{children}</ClientWrapper>
       </body>
