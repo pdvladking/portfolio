@@ -28,7 +28,12 @@ export default function Footer() {
         </div>
 
         {/* Back to top */}
-        <a href="#top" className="hover:text-accent transition hidden md:inline">Back to top ↑</a>
+    <a
+  href="#top"
+  className="hover:text-accent transition text-sm underline underline-offset-4"
+>
+  Back to top ↑
+</a>
       </div>
     </footer>
   );
