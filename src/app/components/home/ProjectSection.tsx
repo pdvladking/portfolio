@@ -25,6 +25,13 @@ export default function ProjectShowcase() {
       tech: ["Next.js", "Framer Motion", "Vercel"],
       link: "https://eden-tattoo-studio.vercel.app/",
     },
+    {
+    title: "Event Portal",
+    description:
+      "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Vercel"],
+    link: "https://aws-lambda-mern-event-portal.vercel.app/",
+  },
   ];
 
   return (
