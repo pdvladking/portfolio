@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function ProjectShowcase() {
   const projects = [
@@ -10,6 +11,7 @@ export default function ProjectShowcase() {
         "Full-stack product showcase with dynamic cart logic, responsive grid, and clean deployment. Built fast, shipped sharp.",
       tech: ["MongoDB", "Express", "React", "Node.js"],
       link: "https://rj-mernstorm.vercel.app/",
+      image: "/images/leather-shop-thumb.webp",
     },
     {
       title: "Hospital Site",
@@ -17,6 +19,7 @@ export default function ProjectShowcase() {
         "Robust MERN platform with modular UI, dynamic appointments, patient records, and admin/doctor views. Real-world logic, real-time execution.",
       tech: ["MongoDB", "Express", "React", "Node.js"],
       link: "https://mern-hospital-site.vercel.app/",
+      image: "/images/hospital-thumb.webp",
     },
     {
       title: "Eden Tattoo Studio",
@@ -24,14 +27,16 @@ export default function ProjectShowcase() {
         "Narrative-driven Next.js website with locked dark theme, scroll rhythm, and accent borders. Identity meets execution.",
       tech: ["Next.js", "Framer Motion", "Vercel"],
       link: "https://eden-tattoo-studio.vercel.app/",
+      image: "/images/eden-tattoo-thumb.webp",
     },
     {
-    title: "Event Portal",
-    description:
-      "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
-    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Vercel"],
-    link: "https://aws-lambda-mern-event-portal.vercel.app/",
-  },
+      title: "Event Portal",
+      description:
+        "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Vercel"],
+      link: "https://aws-lambda-mern-event-portal.vercel.app/",
+      image: "/images/event-portal-thumb.webp",
+    },
   ];
 
   return (
@@ -52,6 +57,16 @@ export default function ProjectShowcase() {
               rel="noopener noreferrer"
               className="block bg-neutral-900 text-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-2 border-red-500 pulse-border"
             >
+              <div className="relative w-full h-48 mb-4 border-2 border-red-500 rounded overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} thumbnail`}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 hover:scale-105 hover:grayscale-0 grayscale"
+                />
+              </div>
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 {project.title}
               </h3>
