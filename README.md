@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Raja Thapa — Portfolio 🚀
 
-## Getting Started
+This is my personal portfolio built with Next.js and Tailwind CSS. It’s not just a showcase—it’s a declaration. Every section is intentional. Every scroll is rhythm. Every pixel is survival logic.
 
-First, run the development server:
+## 🔥 Why This Exists
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I don’t wait for permission. I architect presence.  
+This portfolio is my outbound weapon—designed to cut through noise, ghosting, and collapse.  
+Built solo. Shipped under pressure. Tuned for recruiter-grade clarity.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, Tailwind CSS  
+- **Routing**: App Router  
+- **Deployment**: Vercel  
+- **Design Logic**: Scroll rhythm, layout precision, modular sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Featured Projects
 
-## Learn More
+- **Event Portal** – RSVP flow, template selector, AWS Lambda logic  
+- **Hospital Site** – MERN stack, admin dashboard, appointment logic  
+- **Eden Tattoo Studio** – Locked dark mode, accent borders, narrative flow  
+- **Leather Shop** – Full-stack e-commerce with cart logic and product grid
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 Certifications
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- freeCodeCamp Responsive Web Design  
+- freeCodeCamp JavaScript Data Structures & Algorithms
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 Live Site
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[https://rajthapa-portfolio.vercel.app](https://rajthapa-portfolio.vercel.app)
