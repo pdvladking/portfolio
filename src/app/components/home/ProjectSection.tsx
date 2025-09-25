@@ -37,6 +37,14 @@ export default function ProjectShowcase() {
       link: "https://aws-lambda-mern-event-portal.vercel.app/",
       image: "/images/event-portal-thumb.webp",
     },
+    {
+      title: "Multi-Tenant Notes App",
+      description:
+        "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      link: "https://notes-app-sigma-navy.vercel.app/login",
+      image: "/public/images/multi-tenant notes app.webp",
+    },
   ];
 
   return (
