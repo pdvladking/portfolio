@@ -43,7 +43,7 @@ export default function ProjectShowcase() {
         "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
       link: "https://notes-app-sigma-navy.vercel.app/login",
-      image: "/public/images/multi-tenant notes app.webp",
+      image: "/images/multi-tenant notes app.webp",
     },
   ];
 
