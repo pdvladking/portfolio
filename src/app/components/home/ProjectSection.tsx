@@ -40,7 +40,7 @@ export default function ProjectShowcase() {
     {
       title: "Multi-Tenant Notes App",
       description:
-        "Real-time MERN event platform with dynamic template selector, RSVP flow, and responsive layout. Built under pressure, shipped with precision.",
+        "A MERN stack notes application built to support multiple tenants (companies). Each tenant can manage their users and notes securely. The app includes role-based access control and enforces subscription limits.",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
       link: "https://notes-app-sigma-navy.vercel.app/login",
       image: "/images/multi-tenant notes app.webp",
