@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -61,21 +61,24 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Right Section: Image */}
+        {/* Right Section: Glowing Avatar */}
         <motion.div
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.15 }}
         >
-          <Image
-            src="/r2.webp"
-            alt="Raja"
-            width={384}
-            height={384}
-            priority
-            className="rounded-xl border-2 border-red-500 shadow-lg object-cover animate-pulse"
-          />
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full border-4 border-red-500 animate-avatar-glow" />
+            <Image
+              src="/images/hero.webp"
+              alt="Raja"
+              width={384}
+              height={384}
+              priority
+              className="rounded-full border-4 border-red-500 shadow-[0_0_40px_rgba(255,0,0,0.5)]"
+            />
+          </div>
         </motion.div>
       </div>
 

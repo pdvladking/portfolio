@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Navbar from "./components/home/Navbar";
-import Hero from "./components/home/Hero";
-import AboutPreview from "./components/home/AboutPreview";
-import SkillsSection from "./components/home/SkillsSection";
-import ContactSection from "./components/home/ContactSection";
-import ProjectSection from "./components/home/ProjectSection";
-import Footer from "./components/home/Footer";
-import ResumeSection from "./components/home/ResumeSection";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import AboutPreview from "./components/AboutPreview";
+import SkillsSection from "./components/SkillsSection";
+import ContactSection from "./components/ContactSection";
+import ProjectSection from "./components/ProjectSection";
+import Footer from "./components/Footer";
+import ResumeSection from "./components/ResumeSection";
 
 export default function Home() {
   return (
@@ -20,8 +20,8 @@ export default function Home() {
     >
       <Navbar />
       <Hero />
-      <SkillsSection />
       <ProjectSection />
+      <SkillsSection />
       <ResumeSection />
       <ContactSection />
       <AboutPreview />

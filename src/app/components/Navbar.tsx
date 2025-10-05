@@ -12,20 +12,21 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black text-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        
-        {/* Left: Branding */}
-        <div className="relative text-2xl font-playfair font-bold tracking-wide animate-phoenix-shake-ash transition-transform duration-300 ease-in-out">
-          <span className="bg-gradient-to-r from-red-700 via-red-600 to-red-500 bg-clip-text text-transparent drop-shadow-md animate-phoenix-shake-ash font-bold text-2xl tracking-wide">
-            RAJA
-          </span>
-          <span className="spark top-0 left-0" />
-          <span className="spark top-0 right-0" />
-          <span className="spark bottom-0 left-2" />
-        </div>
+
+        {/* Left: Logo as Home Button with Lava Sparks */}
+        <a href="#home" className="cursor-pointer">
+          <div className="relative text-2xl font-playfair font-bold tracking-wide animate-phoenix-shake-ash transition-transform duration-300 ease-in-out">
+            <span className="bg-gradient-to-r from-red-700 via-red-600 to-red-500 bg-clip-text text-transparent drop-shadow-md animate-phoenix-shake-ash font-bold text-2xl tracking-wide">
+              RAJA
+            </span>
+            <span className="spark top-0 left-0" style={{ animationDelay: '0s' }} />
+            <span className="spark top-0 right-0" style={{ animationDelay: '0.4s' }} />
+            <span className="spark bottom-0 left-2" style={{ animationDelay: '0.8s' }} />
+          </div>
+        </a>
 
         {/* Center: Desktop Nav Links */}
         <div className="hidden md:flex space-x-8 text-white text-sm font-medium">
-          <a href="#home" className="hover:text-red-600">Home</a>
           <a href="#projects" className="hover:text-red-600">Projects</a>
           <a href="#contact" className="hover:text-red-600">Contact</a>
           <a href="#about" className="hover:text-red-600">About</a>
@@ -34,7 +35,6 @@ export default function Navbar() {
 
         {/* Right: Icon Stack + Mobile Toggle */}
         <div className="flex items-center space-x-4">
-          {/* GitHub Icon */}
           <a
             href="https://github.com/pdvladking"
             target="_blank"
@@ -45,7 +45,6 @@ export default function Navbar() {
             <FaGithub />
           </a>
 
-          {/* Instagram Icon */}
           <a
             href="https://www.instagram.com/rajthapa_404/"
             target="_blank"
@@ -56,7 +55,6 @@ export default function Navbar() {
             <FaInstagram />
           </a>
 
-          {/* TikTok Icon */}
           <a
             href="https://www.tiktok.com/@rajthapa_404"
             target="_blank"
@@ -67,7 +65,6 @@ export default function Navbar() {
             <FaTiktok />
           </a>
 
-          {/* Freelance Badge */}
           <a
             href="#contact"
             className="px-3 py-1 text-xs rounded-full bg-black text-white font-semibold border border-[#ff3c3c] shadow-md hover:scale-105 transition-transform duration-300 animate-shine"
@@ -75,13 +72,14 @@ export default function Navbar() {
             Open to Freelance
           </a>
 
-          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-xl text-white focus:outline-none"
+            className="md:hidden text-xl text-white focus:outline-none transition-transform duration-300 hover:scale-110"
             aria-label="Toggle Menu"
           >
-            {isOpen ? '✕' : '☰'}
+            <span className="transition-opacity duration-300">
+              {isOpen ? '✕' : '☰'}
+            </span>
           </button>
         </div>
       </div>
@@ -89,7 +87,6 @@ export default function Navbar() {
       {/* Mobile Nav Links */}
       {isOpen && (
         <div className="md:hidden bg-black text-white flex flex-col items-center space-y-4 py-4 px-6 shadow-lg">
-          <a href="#home" className="hover:text-red-600" onClick={() => setIsOpen(false)}>Home</a>
           <a href="#projects" className="hover:text-red-600" onClick={() => setIsOpen(false)}>Projects</a>
           <a href="#about" className="hover:text-red-600" onClick={() => setIsOpen(false)}>About</a>
           <a href="#contact" className="hover:text-red-600" onClick={() => setIsOpen(false)}>Contact</a>
