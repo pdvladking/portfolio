@@ -27,7 +27,7 @@ export default function ProjectShowcase() {
       description:
         "Narrative-driven Next.js website with locked dark theme, scroll rhythm, and accent borders.",
       tech: ["Next.js", "Framer Motion", "Vercel"],
-      link: "https://eden-tattoo-studio.vercel.app/",
+      link: "https://edentattoonepal.com.np/",
       image: "/images/eden.webp",
     },
     {
