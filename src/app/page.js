@@ -9,6 +9,7 @@ import ContactSection from "./components/ContactSection";
 import ProjectSection from "./components/ProjectSection";
 import Footer from "./components/Footer";
 import ResumeSection from "./components/ResumeSection";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <ContactSection />
       <AboutPreview />
       <Footer />
+      <WhatsAppButton />
     </motion.main>
   );
 }
